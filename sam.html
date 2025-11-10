@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friendship Letter 💌</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffe6f0, #d4f1f9);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+    }
+
+    .envelope {
+      position: relative;
+      width: 340px;
+      height: 240px;
+      background-image: url('https://i.imgur.com/g4FvXUu.png');
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      overflow: hidden;
+      transition: transform 0.5s ease;
+    }
+
+    .envelope:hover {
+      transform: translateY(-10px);
+    }
+
+    .heart {
+      position: absolute;
+      top: 95px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 40px;
+      color: #ff4d4d;
+      cursor: pointer;
+      z-index: 3;
+      transition: transform 0.3s ease;
+    }
+
+    .heart:hover {
+      transform: translateX(-50%) scale(1.2);
+    }
+
+    .letter {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fffdf4;
+      border-radius: 10px;
+      padding: 20px;
+      box-sizing: border-box;
+      transition: top 0.6s ease;
+      text-align: center;
+      z-index: 1;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .envelope:hover .letter {
+      top: 0;
+    }
+
+    .photo {
+      width: 100%;
+      height: 140px;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      margin-bottom: 10px;
+    }
+
+    .message {
+      opacity: 0;
+      color: #444;
+      font-size: 15px;
+      line-height: 1.6;
+      animation: fadeIn 2s ease forwards;
+      animation-delay: 0.8s;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    .signature {
+      margin-top: 20px;
+      font-style: italic;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="envelope">
+    <div class="heart">💌</div>
+    <div class="letter">
+      <img class="photo" src="t.jpeg" alt="Friendship Photo">
+      <div class="message">
+        Hi Sam,<br><br>
+        Thank you for being such a great friend! 💛  
+        You’re one of the realest people I know — always kind, funny, and there when it matters most.  
+        I’m really glad that our paths crossed, and I appreciate every moment of laughter and stories we share.  
+        You make simple days feel special. 😊<br><br>
+        Always stay awesome, bro!  
+      </div>
+      <div class="signature">
+        — From your friend 💫
+      </div>
+    </div>
+  </div>
+</body>
+</html>
